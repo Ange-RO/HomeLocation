@@ -1,0 +1,16 @@
+<main>
+  <a [routerLink]="['/']">
+      <img
+        class="brand-logo"
+        src="/assets/logo.svg"
+        alt="logo"
+        aria-hidden="true"
+      />
+  </a>
+    <router-outlet></router-outlet>
+</main>
+
+<app-housing-location
+  *ngFor="let housingLocation of housingLocationList"
+  [housingLocation]="housingLocation"
+></app-housing-location>
